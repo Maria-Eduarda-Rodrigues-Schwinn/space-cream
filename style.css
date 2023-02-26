@@ -177,6 +177,11 @@ main :nth-child(6) {
 
   header .legenda p {
     margin: 3.2rem 3rem;
+
+    font-family: 'Roboto' sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   main {
@@ -187,6 +192,7 @@ main :nth-child(6) {
 
   main .card img {
     width: 220px;
+    height: auto;
 
     animation: none;
   }
@@ -201,10 +207,17 @@ main :nth-child(6) {
 
     margin-top: 50px;
     justify-content: center;
+
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
   }
 
   a {
     text-decoration: none;
+
+    color: hsl(232, 17%, 35%);    
   }
 
   main :nth-child(5), 
@@ -212,33 +225,34 @@ main :nth-child(6) {
     display:flex;
   }
 
-  main .cards {
+  .cards {
     display: grid;
     gap: 3.2rem;
     grid-template-areas: "A B C"
-                        "D E F";
+    "D B F"
+    "D E F";
   }
 
-  main .card #img1 {
+  .cards > div:nth-child(1){
     grid-area: A;
   }
 
-  main .card #img2 {
+  .cards > div:nth-child(2){
     grid-area: B;
   }
 
-  main .card #img3 {
+  .cards > div:nth-child(3) {
     grid-area: C;
   }
 
-  main .card #img4 {
+  .cards > div:nth-child(4) {
     grid-area: D;
   }
-  main .card #img5 {
+  .cards > div:nth-child(5) {
     grid-area: E;
   }
 
-  main .card #img6 {
+  .cards > div:nth-child(6) {
     grid-area: F;
   }
 
@@ -246,5 +260,8 @@ main :nth-child(6) {
   main .cards div:nth-child(3),
   main .cards div:nth-child(5) {
     height: fit-content;
+  }
+  .cards > div :hover {
+    transform: scale(1.1);
   }
 }
