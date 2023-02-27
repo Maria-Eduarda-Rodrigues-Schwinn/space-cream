@@ -31,12 +31,6 @@ header {
   padding-bottom: 2.9rem;
 }
 
-.titulo {
-  background-color: var(--bg-color-titulo);
-
-  height: 4.9rem;
-}
-
 main {
   background-color: var(--bg-color-main);
 
@@ -59,6 +53,10 @@ header .legenda p {
 }
 
 header .titulo {
+  background-color: var(--bg-color-titulo);
+
+  height: 4.9rem;
+
   color: var(--fc-header-h1);
 
   display: flex;
@@ -255,12 +253,7 @@ main :nth-child(6) {
   .cards > div:nth-child(6) {
     grid-area: F;
   }
-
-  main .cards div:nth-child(1),
-  main .cards div:nth-child(3),
-  main .cards div:nth-child(5) {
-    height: fit-content;
-  }
+  
   .cards > div :hover {
     transform: scale(1.1);
   }
